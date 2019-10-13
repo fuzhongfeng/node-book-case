@@ -16,10 +16,6 @@ console.log(process.cwd())
 server.use(connect.logger('dev'))
 
 server.use(function(req, res, next) {
-    next()
-})
-
-server.use(function(req, res, next) {
     if (req.method === 'GET'  && '/images' === req.url.substr(0, 7)) {
         fs.stat(__dirname + '/website/' + req.url, function(err, stat) {
             if (err || !stat.isFile()) {
