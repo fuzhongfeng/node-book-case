@@ -4,6 +4,6 @@
     "dependencies": {
         "express": "2.5.9",
         "ejs": "0.4.2",
-        "superagent": "0.3.0"
+        "superagent": "5.0.2"
     }
 }
